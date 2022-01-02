@@ -1,0 +1,67 @@
+
+<div class="bootstrap-wrapper">
+  <div class="container">
+
+    <div class="row" >
+      <div class="col-md-6 offset-md-3">
+        <mat-card>
+        <div class="container" style="text-align: center; ">
+
+          <img src="../../../assets/signup-logo.png" height="80px">
+        </div>
+
+        <h1 class="text-center">Register!!</h1>
+
+        <!-- {{user | json}} -->
+
+        <form (ngSubmit)="formSubmt()">
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Username*</mat-label>
+            <input matInput placeholder="Enter Username" [(ngModel)]="user.username" name="username" />
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>First Name*</mat-label>
+            <input matInput placeholder="Enter Firstname" [(ngModel)] ="user.firstName" name="firstName" />
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Last Name*</mat-label>
+            <input matInput placeholder="Enter Lastname" [(ngModel)] = "user.lastName" name="lastName" />
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Email*</mat-label>
+            <input matInput placeholder="Enter Email" [(ngModel)] ="user.email" name="email" />
+          </mat-form-field>
+
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>password*</mat-label>
+            <input matInput placeholder="Enter password" [(ngModel)] ="user.password" name="password"  /> 
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Phone*</mat-label>
+            <input matInput placeholder="Enter Phone" [(ngModel)] = "user.phone" name="phone" />
+          </mat-form-field>
+
+          <div class="container text-center">
+
+            <button type="submit" mat-raised-button color="primary">Register</button>
+            <button style="margin-left: 20px;" mat-raised-button color="warm">Reset</button>
+
+          </div>
+
+        </form>
+      </mat-card>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
